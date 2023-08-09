@@ -8,28 +8,74 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f2f2f2; /* Warna latar belakang halaman */
+        }
+        .cover {
+            width: 100%;
+            height: 200px;
+            background-image: url('cover.jpg'); /* Ganti dengan URL gambar cover Anda */
+            background-size: cover;
+            background-position: center;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
             border: 1px solid #ccc;
-            padding: 20px;
             border-radius: 5px;
+            margin-top: -50px;
+            background-color: sienna; /* Warna latar belakang kontainer */
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(168, 96, 62);
         }
     </style>
 </head>
 <body>
+    <div class="cover"></div>
     <div class="container">
         <h1>Biodata Siswa</h1>
-        <p><strong>Nama:</strong> John Doe</p>
-        <p><strong>Tanggal Lahir:</strong> 10 Januari 2005</p>
-        <p><strong>Alamat:</strong> Jalan Jendral Sudirman No. 123, Jakarta</p>
-        <p><strong>Email:</strong> john.doe@example.com</p>
-        <p><strong>No. Telepon:</strong> 08123456789</p>
-        <p><strong>Jurusan:</strong> IPA</p>
-        <p><strong>Kelas:</strong> 10A</p>
-        <p><strong>Hobi:</strong> Membaca, Berenang</p>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td>Fandi Kurniawan</td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir</th>
+                <td>13 mei 2005</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>sulawesi</td>
+            </tr>
+            <tr>
+                <th>No. Telepon</th>
+                <td>01234567890</td>
+            </tr>
+            <tr>
+                <th>Jurusan</th>
+                <td>RPL</td>
+            </tr>
+            <tr>
+                <th>Kelas</th>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Hobi</th>
+                <td>Mancing bos!!!</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
